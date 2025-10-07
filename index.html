@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>User Regestration Form</title>
+ <link rel="stylesheet" href="style.css">
 <head>
     <body>
         <header>
@@ -27,10 +29,10 @@ your last name" required>
     <input type="number" id="age" name="age" min="1"required>
     <br>
     <span>Gender:</span>
-    <br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="radio" id="female" name="gender" value="female"></label>
-    <br>
+    <label for="gender"></label>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+  <br>
     <label for="photo"profile photo></label>
     <input type="file" id="photo" name="photo" accept="image/*">
     <br>
@@ -114,7 +116,6 @@ your last name" required>
         <input type="password" id="confirm-password" name="confirm_password" required><br><br>
       </fieldset>
 
-      <!-- Feedback & Additional Information -->
       <fieldset>
         <legend>Feedback & Additional Information</legend>
 
@@ -149,9 +150,8 @@ your last name" required>
         <label><input type="checkbox" name="privacy" required> I agree to the Privacy Policy</label><br><br>
       </fieldset>
 
-      <!-- Actions -->
-      <button type="submit">Register</button>
-      <button type="reset">Clear Form</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
     </form>
   </main>
 </body>

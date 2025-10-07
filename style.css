@@ -1,0 +1,281 @@
+:root {
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+}
+
+:background{
+    --background: #f9f9f9;
+   --white: #ffffff;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --border: #d1d5db;
+    --border-focus: #2563eb;
+
+}
+
+:status{
+    --success: #10b981;
+    --error: #ef4444;
+    --warning: #f59e0b;
+}
+
+:accents{
+    --accent-purple: #8b5cf6;
+    --accent-pink: #ec4899;
+}
+
+:layout{
+    --max-width: 600px;
+  --radius: 10px;
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --gap: 12px;
+  --transition: 200ms ease;
+  --min-touch: 44px;
+  --label-size: 0.9rem;
+  --input-size: 1rem;
+}
+
+:body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--background);
+  primary-light: #3b82f6;
+  margin: 0;
+  align-items: center;
+justify-content: center;
+ display: flex;
+
+}
+
+:form{
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+
+}
+
+Typography
+h1, legend {
+    text-align: center;
+     color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius:8px;
+    background-color:var(--white);
+    transition:  border-color 0.3s, box-shadow 0.3s;
+}
+
+Input Hover and Focus
+input:focus, select:focus, textarea:focus {
+  border-color: var(--border-focus);
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-light);
+}
+
+input:hover, select:hover, textarea:hover {
+  border-color: var(--primary-blue);
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+button:active {
+  background-color: var(--primary-light);
+}
+
+   Root Variable colors & fonts
+:root {
+  --primary-blue: #2563eb;
+  --primary-dark: #1e40af;
+  --primary-light: #3b82f6;
+  --background: #f9fafb;
+  --white: #ffffff;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border: #d1d5db;
+  --border-focus: #2563eb;
+  --success: #10b981;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --accent-purple: #8b5cf6;
+  --accent-pink: #ec4899;
+  --font-main: "Poppins", Arial, sans-serif;
+}
+
+Global reset
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--background);
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form container{
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form title
+form container h2{
+  text-align: center;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+input fields
+.form group{
+  margin-bottom: 1.2rem;
+}
+
+label{
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+:placeholder-styling 
+::placeholder{
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+input:focus, select:focus, textarea:focus{
+  border-color: var(--border-focus);
+  outline: none;
+  box-shadow:0 0 5px rgba(37, 99, 235, 0.4); 
+}
+
+input:hover, select:hover, textarea:hover{
+  border-color: var(--primary-light);
+}
+
+button{
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background-color: var(--primary-dark);
+}
+
+
+button[type="reset"] {
+  background-color: #6b7280; /* gray */
+}
+
+button[type="reset"]:hover {
+  background-color: #374151;
+}
+
+
+button:active{
+  transform-scale:(0.97);
+}
+
+button:disabled{
+  background: var(--border);
+  cursor: not-allowed;
+}
+
+.error-message{
+  color: var(--error);
+  font-size: 0.9rem;
+}
+
+.success-message{
+  color: var(--success);
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 480px){
+  .form container{
+    padding: 1rem;
+  }
+}
+
+.form container h2{
+  font-size: 1.4rem;
+}
+
+input, select, textarea{
+  font-size: 0.9rem;
+  padding: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
